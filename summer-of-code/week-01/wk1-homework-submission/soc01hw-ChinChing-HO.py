@@ -39,6 +39,20 @@ print(int(time_run_out))
 #So, it takes around 1067519911673 days for a 64-bit system to timeout, if it has a bug with integer overflow 
 
 #7.Calculate your age accurately based on your birthday (maybe use time of day e.g. 8:23am if you know it, use 12:00 noon midday)
+import datetime
+Year = int(input(" Please enter the year you were born "))
+Month = int(input(" Please enter the number of the month you were born.  For example 10 = October "))
+Day = int(input(" Please enter the day you were born "))
+Time = int(input(" Please enter the time you were born in integer. For example 1200 = noon"))
+DOB = datetime.datetime(Year,Month,Day,Time)
+Age = (datetime.datetime.now() - DOB)
+Hours_of_birth = (Age.days*24*365)
+Minutes_of_birth = (Age.days*60*24*365)
+Seconds_of_birth = (Age.days*60*60*24*365)
+print("You are " + str(Age.days) + " days old, " + str(Hours_of_birth) + " hours, " + str(Minutes_of_birth) + " minutes, "+ str(Seconds_of_birth) + " seconds. " )
+convertdays = int(Age.days)
+AgeYears = convertdays/365
+print("Or you are " + str(AgeYears) + " years old to be more precise!")
 
 #Day2 [17/7/2018]
 #No Homework 
