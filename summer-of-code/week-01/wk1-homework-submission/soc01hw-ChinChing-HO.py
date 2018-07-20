@@ -20,11 +20,23 @@ print(486180000/60/60/24/365)
 
 #Here are some tougher questions:
 #5.How many days does it take for a 32-bit system to timeout, if it has a bug with integer overflow?
-#Integer n = 1;
-print("infinte")
+#integer n = 1;
+#assump the system increasw +1 per millisecond
+#calculate the maximum
+maximum = (2 ** 31 - 1)
+print(maximum)
+time_run_out = maximum/100/60/60/24
+print(time_run_out)
+print(int(time_run_out))
+#So, it takes around 248 days for a 32-bit system to timeout, if it has a bug with integer ovweflow 
 
 #6.How about a 64-bit system?
-print()
+maximum = (2 ** 63 - 1)
+print(maximum)
+time_run_out = maximum/100/60/60/24
+print(time_run_out)
+print(int(time_run_out))
+#So, it takes around 1067519911673 days for a 64-bit system to timeout, if it has a bug with integer ovweflow 
 
 #7.Calculate your age accurately based on your birthday (maybe use time of day e.g. 8:23am if you know it, use 12:00 noon midday)
 
