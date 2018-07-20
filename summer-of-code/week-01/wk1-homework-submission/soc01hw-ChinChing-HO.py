@@ -59,6 +59,9 @@ print("Or you are " + str(AgeYears) + " years old to be more precise!")
 
 #Day3 [18/7/2018]
 #1.Full name greeting. Write a program that asks for a person’s first name, then middle, and then last. Finally, it should greet the person using their full name.
+first_name = str(input(" Please tell me your first name. "))
+last_name = str(input(" Please tell me your last name. "))
+print("Hello, " + first_name + (" ") + last_name + " ! ")
 
 #2.Bigger, better favorite number. Write a program that asks for a person’s favorite number. Have your program add 1 to the number, and then suggest the result as a bigger and better favorite number. (Do be tactful about it, though.)
 
